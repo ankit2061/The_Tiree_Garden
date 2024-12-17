@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDE697"
+    tools:context=".MainActivity2">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp">
+
+                <ImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="79dp"
+                    android:layout_height="58dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/tree"></ImageView>
+
+                <TextView
+                    android:id="@+id/greetingTextView"
+                    android:layout_width="295dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="113dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/anticslab"
+                    android:text="The Tiree Garden"
+                    android:textColor="#0E6B06"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.139"
+                    app:layout_constraintStart_toEndOf="@+id/profileImageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/search_view_bg"
+                app:queryHint="Search Here......"
+                app:iconifiedByDefault="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_2">
+
+                    <ImageView
+                        android:id="@+id/psychometricLightImageView"
+                        android:layout_width="2dp"
+                        android:layout_height="2dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:id="@+id/psychometricTestImageView"
+                        android:layout_width="112dp"
+                        android:layout_height="118dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.491"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/ayu_clip_art" />
+
+                    <TextView
+                        android:id="@+id/psychometricTestTextView"
+                        android:layout_width="144dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/abril_fatface"
+                        android:text="AYURVEDA"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/psychometricTestImageView"
+                        app:layout_constraintStart_toStartOf="@+id/psychometricTestImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/psychometricTestImageView" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_4">
+
+                    <ImageView
+                        android:id="@+id/careerLightImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/careerCounsellingImageView"
+                        android:layout_width="115dp"
+                        android:layout_height="102dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.19999999"
+                        app:srcCompat="@drawable/unani_yo" />
+
+                    <TextView
+                        android:id="@+id/careerCounsellingTextView"
+                        android:layout_width="112dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/abril_fatface"
+                        android:text="UNANI"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/careerCounsellingImageView"
+                        app:layout_constraintHorizontal_bias="0.666"
+                        app:layout_constraintStart_toStartOf="@+id/careerCounsellingImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/careerCounsellingImageView" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_5">
+
+                    <ImageView
+                        android:id="@+id/eLibraryImageView"
+                        android:layout_width="111dp"
+                        android:layout_height="109dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/siddha" />
+
+                    <TextView
+                        android:id="@+id/eLibraryTextView"
+                        android:layout_width="121dp"
+                        android:layout_height="39dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/abril_fatface"
+                        android:text="SIDDHA"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/eLibraryImageView"
+                        app:layout_constraintStart_toStartOf="@+id/eLibraryImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/eLibraryImageView" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="204dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_6">
+
+                    <ImageView
+                        android:id="@+id/eLibraryImageView"
+                        android:layout_width="111dp"
+                        android:layout_height="109dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/modern_pg" />
+
+                    <TextView
+                        android:id="@+id/eLibraryTextView"
+                        android:layout_width="331dp"
+                        android:layout_height="77dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/abril_fatface"
+                        android:text="MODERN MEDICINAL PLANTS"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/eLibraryImageView"
+                        app:layout_constraintStart_toStartOf="@+id/eLibraryImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/eLibraryImageView" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal"></LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="3dp"
+            android:background="#765341"
+            android:padding="0dp"
+            app:itemIconSize="36dp"
+            app:layout_anchorGravity="bottom"
+            app:menu="@menu/bottom_nav_menu">
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
